@@ -1,0 +1,53 @@
+/* src/components/frank/AnnouncementForm.module.css */
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroupBtn {
+  margin-bottom: 15px;
+  margin-top: 100px;
+  
+
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.input,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 10px; /* Increase the margin-top for more space */
+}
+
+.quillEditor {
+  /* Add styles to customize the Quill editor */
+  height: 300px; /* Adjust the height as needed */
+  margin-bottom: 15px; /* Add margin to separate from other elements */
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px; /* Ensure the button is not covered by the editor */
+  margin-left: 500px;
+}
+
+.quillEditorContainer {
+  height: 400px; /* 設定編輯器的最大高度 */
+  overflow-y: auto; /* 如果內容超出高度，顯示垂直滾動條 */
+  margin-bottom: 50px; /* 底部空間，確保足夠顯示按鈕 */
+}
