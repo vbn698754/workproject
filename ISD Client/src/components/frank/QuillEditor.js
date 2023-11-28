@@ -3,6 +3,7 @@ import React from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
+
 const QuillEditor = ({ onChange, value }) => {
   const handleEditorChange = (content) => {
     onChange(content);
@@ -10,6 +11,7 @@ const QuillEditor = ({ onChange, value }) => {
 
   return (
     <ReactQuill
+      style={{ height: '350px' }}
       value={value}
       onChange={handleEditorChange}
       modules={{

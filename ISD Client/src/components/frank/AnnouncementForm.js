@@ -75,9 +75,9 @@ const AnnouncementForm = () => {
 
       <div className={`${FormStyle.formGroup} ${FormStyle.quillEditorContainer}`}>
         <label className={FormStyle.label}>內容：</label>
-        <QuillEditor value={formData.content} onChange={handleEditorChange} />
+        <QuillEditor className={FormStyle.content} value={formData.content} onChange={handleEditorChange}  />
       </div>
-
+    
       <div className={FormStyle.formGroupBtn}>
         <button type="submit" className={FormStyle.button}>
           上傳

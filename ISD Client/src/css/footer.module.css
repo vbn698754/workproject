@@ -1,6 +1,8 @@
 .footer {
     width: 100%;
     background-color: #ffffff;
+    bottom: 0;
+    height: 60px;
 }
 
 .myFooter {
@@ -69,3 +71,4 @@
     padding-bottom: 10px;
     text-decoration: none;
 }
+

@@ -1,0 +1,12 @@
+.layout {
+    flex: 1; /* 將內容部分設置為可伸縮的 flexbox 子項目 */
+    padding-bottom: 20px; /* 可根據需要調整底部內邊距 */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 72vh;
+  }
+  

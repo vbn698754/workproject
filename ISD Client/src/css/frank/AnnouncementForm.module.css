@@ -7,11 +7,12 @@
 
 .formGroup {
   margin-bottom: 15px;
+  
 }
 
 .formGroupBtn {
   margin-bottom: 15px;
-  margin-top: 100px;
+  
   
 
 }
@@ -47,7 +48,13 @@ button {
 }
 
 .quillEditorContainer {
-  height: 400px; /* 設定編輯器的最大高度 */
+  height: 500px; /* 設定編輯器的最大高度 */
   overflow-y: auto; /* 如果內容超出高度，顯示垂直滾動條 */
   margin-bottom: 50px; /* 底部空間，確保足夠顯示按鈕 */
+  
+}
+
+.content {
+  height: 300px;
+  margin-bottom: 500px;
 }

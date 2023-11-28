@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Detail from '../../css/frank/AnnouncementDetail.module.css'
 
 const AnnouncementDetail = ({ match }) => {
   const [announcement, setAnnouncement] = useState(null);
@@ -23,31 +24,13 @@ const AnnouncementDetail = ({ match }) => {
   }
 
   return (
-    <div className="container">
+    <div className="container" >
+      <div className={`${Detail.layout} ${Detail.container}`}>
       <h2>{announcement.title}</h2>
       <p>作者: {announcement.author}</p>
       <p>上傳時間: {new Date(announcement.timestamp).toLocaleString()}</p>
       <div dangerouslySetInnerHTML={{ __html: announcement.content }}></div>
-      {announcement.files.length > 0 && (
-        <div>
-          <h3>附件：</h3>
-          <ul>
-            {announcement.files.map((file, index) => (
-              <li key={index}>
-                <span>{file.filename}</span>
-                <a
-                  href={`http://localhost:3001${file.url}`}
-                  download={file.filename}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  下載
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      </div>
     </div>
   );
 };
